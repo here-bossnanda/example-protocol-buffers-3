@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-message Account {
-  uint32 id = 1;
-  string name = 2;
-  bytes thumbnail = 3;
-  bool is_verify = 4;
-  float height = 5;
-}
