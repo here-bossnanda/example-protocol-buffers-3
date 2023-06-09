@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+
+import "exercise-1/imports/city.proto";
+import "exercise-1/imports/street.proto";
+import "exercise-1/imports/building.proto";
+
+message Address {
+  City city = 1;
+  Street street = 2;
+  Building building = 3;
+}
