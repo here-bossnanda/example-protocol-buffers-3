@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google.protobuf.timestamp.proto";
+import "google.protobuf.duration.proto";
+
+message Example {
+  uint id = 1;
+  string name = 2;
+  google.protobuf.Timestamp created_at = 3;
+  google.protobuf.Duration duration = 4
+}

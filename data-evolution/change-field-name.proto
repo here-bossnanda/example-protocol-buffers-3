@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+// original message
+message Account {
+  uint32 id = 1;
+  string first_name = 2;
+}
+
+// change to 
+message Account {
+  uint32 id = 1;
+  string alias = 2;
+}
+
+
+// note: important thing is don't remove the tag, its just change the field name
+// so when the first_name or alias send by client it can be identifier in tag 2, so just becarefull 

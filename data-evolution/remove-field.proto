@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+// original message
+message Account {
+  uint32 id = 1;
+  string first_name = 2;
+}
+
+// if field first_name want to remove just change proto message to
+message Account {
+  reserved 2; // so nobody can mistakenly use the tag later causing an error
+  reserved first_name; //optional
+  uint32 id = 1;
+}
+
+
+// note: reserved can reserve multiple tags or fields on same line
+// example:
+// reserved 2 to 10;  or you can use range
+// reserved 2,31,15,5; 
+// reserved "first_name", "last_name"; 
