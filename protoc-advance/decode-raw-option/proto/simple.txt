@@ -1,0 +1,8 @@
+id: 100
+is_simple: true
+name: "nanda"
+sample_lists: 1
+sample_lists: 2
+sample_lists: 3
+sample_lists: 4
+sample_lists: 5
